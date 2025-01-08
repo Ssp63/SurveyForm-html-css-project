@@ -21,3 +21,5 @@ To run this project locally:
 
    ```bash
    git clone https://github.com/Ssp63/SurveyForm-html-css-project.git
+
+You can visit the site by clicking on given link - https://ssp63.github.io/SurveyForm-html-css-project/
