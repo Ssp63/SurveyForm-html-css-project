@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="form-container">
+      <h1 id="title">Course Survey Form</h1>
+      <p id="description">Please fill below form for the course you opted</p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Enter Your Name:</label>
+          <input id="name" name="name-label" type="text" required placeholder="Enter your name" />
+        </div>
+        
+        <div class="form-group">
+          <label id="email-label">Enter Your Email:</label>
+          <input id="email" name="email-label" type="email" required placeholder="Enter your email" />
+        </div>
+        
+        <div class="form-group">
+          <label id="number-label">Year of studying:</label>
+          <input id="number" type="number" name="year-label" min="1" max="4" placeholder="Year" />
+        </div>
+        
+        <div class="form-group">
+          <label for="course-label">Which course applied for?</label>
+          <select id="dropdown" name="course-label">
+            <option value="">(Select one)</option>
+            <option value="1">DSA</option>
+            <option value="2">C++</option>
+            <option value="3">Java</option>
+            <option value="4">Python</option>
+          </select>
+        </div>
+
+        <fieldset class="form-group">
+          <legend>How would you rate this course?</legend>
+          <label><input type="radio" name="rating" value="0-25" checked /> 0-25</label>
+          <label><input type="radio" name="rating" value="25-50" /> 25-50</label>
+          <label><input type="radio" name="rating" value="50-75" /> 50-75</label>
+          <label><input type="radio" name="rating" value="75-100" /> 75-100</label>
+        </fieldset>
+        
+        <div class="form-group">
+          <p>What would you like to improve in the course?</p>
+          <label><input type="checkbox" value="1" /> Delivery of faculty</label>
+          <label><input type="checkbox" value="2" /> Content</label>
+          <label><input type="checkbox" value="3" /> Resources</label>
+        </div>
+        
+        <div class="form-group">
+          <p>Feedback</p>
+          <textarea id="feedback" name="fee" rows="3" cols="30" placeholder="Any suggestions"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <input type="submit" value="Submit" id="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
